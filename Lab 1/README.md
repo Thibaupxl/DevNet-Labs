@@ -82,16 +82,13 @@
 
     De gewenste Python versie kan gedownload worden op: https://www.python.org/downloads/windows/, Visual studio Code op https://code.visualstudio.com/ en Jupyter Notebook via `pip install notebook`. Python IDLE is reeds inbegrepen bij Python.
     
-    - Python 3.8 and PIP, Python IDLE
-        Dit programma was reeds geinstalleerd op mijn apparaat.
+    - Python 3.8 and PIP, Python IDLE: deze programma is reeds geinstalleerd op mijn apparaat.
 
     
-    - Visual Studio Code:
-        Dit programma was reeds geinstalleerd op mijn apparaat.
+    - Visual Studio Code: dit programma is reeds geinstalleerd op mijn apparaat.
 
 
-    - Jupyter, Python IDLE:
-        Dit programma was reeds geinstalleerd op mijn apparaat.
+    - Jupyter: dit programma is reeds geinstalleerd op mijn apparaat.
 
 
 - Task troubleshooting:
