@@ -80,13 +80,30 @@
 
 - Task preparation and implementation:
 
+    De gewenste Python versie kan gedownload worden op: https://www.python.org/downloads/windows/, Visual studio Code op https://code.visualstudio.com/ en Jupyter Notebook via `pip install notebook`. Python IDLE is reeds inbegrepen bij Python.
+    
+    - Python 3.8 and PIP, Python IDLE
+        Dit programma was reeds geinstalleerd op mijn apparaat.
+
+    
+    - Visual Studio Code:
+        Dit programma was reeds geinstalleerd op mijn apparaat.
+
+
+    - Jupyter, Python IDLE:
+        Dit programma was reeds geinstalleerd op mijn apparaat.
 
 
 - Task troubleshooting:
 
+    Troubleshooting was nergens nodig bij het uitvoeren van deze taken, alle programmas waren reeds geinstalleerd op mijn windows apparaat.
+    Ik heb wel enkele geupdate, zoals `python -m pip install --upgrade pip` en van Python is reeds versie 3.10 geinstalleerd.
 
 
 - Task verification:
+    Dat Python, IDLE en Jupyter werkend is kan nagegaan worden door in de terminal het volgende uit te voeren:
+    ![Verificate 1.3](/afbeeldingen/lab1_1.4.png)
+
 
 
 
