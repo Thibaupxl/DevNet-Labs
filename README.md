@@ -1,2 +1,5 @@
-# DevNet Labs
- Labs oplossingen uit DevNet Associate cursus
+# Devnet Labs oplossingen
+Uitgewerkte labs uit de cursus Enterprise Networks 2
+
+
+ 
