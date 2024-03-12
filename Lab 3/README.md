@@ -77,7 +77,9 @@
 
     ```
 
-    Hetgeen er te leren valt uit het script is dat de klasse circle drie keer geinitialiseerd is en er zijn 3 verschillende methodes (de init methode meegerekend) gebruikt.
+    Uit het script is op te merken dat de klasse circle drie keer geinitialiseerd is en dat er 3 verschillende methodes (de init methode meegerekend) zijn gebruikt.
+
+    Uitleg methodes:
 
     - De circumference berekent de omtrek en slaat de waarde op in de circumferenceValue variabele.
     
