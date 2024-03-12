@@ -42,6 +42,11 @@
     Dit kan erna als volgt gebruikt worden: `loc1.myLocation()`
 
 
+    In het lab werd dit script verder aangevuld, opgeslaan als myCity.py en uitgetest als volgt:
+    ![myCity.py](/afbeeldingen/lab3_1.png)
+
+
+
     Als laatste onderdeel in dit lab werd er gewerkt met het script circleClass.py.
 
     ```
