@@ -95,6 +95,7 @@
 
     Troubleshooting was nergens nodig bij het uitvoeren van deze taken, alle programmas waren reeds geinstalleerd op mijn windows apparaat.
     Ik heb wel enkele geupdate, zoals `python -m pip install --upgrade pip` en van Python is reeds versie 3.10 geinstalleerd.
+    Indien nodig kan er met een virtuele omgeving gewerkt worden voor een andere versie van Python te gebruiken. `virtualenv --python=python3.8`, hiervoor moet virtualenv wel eerst geinstalleerd zijn.
 
 
 - Task verification:
