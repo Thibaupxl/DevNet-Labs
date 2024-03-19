@@ -7,6 +7,10 @@
     In dit lab werd er geleerd om met Git te werken.
     Alle commando's werden uitgevoerd op de voorziene DEVASC VM.
     Als eerste werd geleerd hoe een Git repo geinitialiseerd kan worden, als tweede werd staging en commits aangeleerd.
+    Als laatste werd het log commando, checkout en merge aangeleerd.
+    
+
+    Geleerde commando's samengevat:
     
     ```
     git init: voor een repository te initaliseren
