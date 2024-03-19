@@ -28,14 +28,41 @@
 
 
 
-
-
 ## Part 2: Create a Python Unit TestLab netacad: 3.5.7
+
+     
 
 
 
 
 ## Part 3: Parse Different Data Types with PythonLab netacad: 3.6.6
+
+- Findings and important commands:
+
+    In het eerste deel van dit lab werd er geleerd om een XML bestand te parsen met een Python script.
+
+    Ik heb dit script genaamd parsexml uitgevoerd in vscode als volgt:
+    ![parsexml.py](/afbeeldingen/lab5_1.png)
+
+
+    In het tweede deel van dit lab werd er geleerd om een JSON bestand te parsen met een Python script.
+
+    Ik heb dit script genaamd parsjson uitgevoerd in vscode als volgt:
+    ![parsejson.py](/afbeeldingen/lab5_2.png)
+
+    Hierna werden de volgende 2 print statements toegevoegd aan het script, hierdoor wordt de output als YAML data weergegeven
+        ```python
+        print("\n\n---")
+        print(yaml.dump(ourjson))
+        ```
+    
+    In het laatste deel van het lab werd er YAML data geparsed en weergegeven als JSON data.
+    Ook dit laatste script heb ik uitgevoerd in vscode:
+    ![parseyaml.py](/afbeeldingen/lab5_3.png)
+
+
+
+
 
 
 
