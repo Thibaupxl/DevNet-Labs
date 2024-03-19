@@ -27,11 +27,117 @@
 
 
 
-
 ## Part 2: Create a Python Unit TestLab netacad: 3.5.7
 
-     
+- Findings and important commands:
 
+    In dit lab werd er geleerd over Unit testing binnen Python.
+
+    What unittest class do you use to create an individual unit of testing?
+    TestCase, hiermee kunnen nieuwe testcases aangemaakt worden.
+
+    How does the test runner know which methods are a test?
+    Methods whose names start with the letters test_ informs the test runner about which methods are tests.
+
+    What command will list all of the command line options for unittest shown in the following output?
+    `python3 -m unittest -h`
+
+    Hierna werd er met het  test_data.py bestand gewerkt.
+    
+    De functie json_search() werd aangemaakt als volgt:
+
+    ```python
+    from test_data import *
+    def json_search(key,input_object):
+        ret_val=[]
+        if isinstance(input_object, dict): # Iterate dictionary
+            for k, v in input_object.items(): # searching key in the dict
+                if k == key:
+                    temp={k:v}
+                    ret_val.append(temp)
+                if isinstance(v, dict): # the value is another dict so repeat
+                    json_search(key,v)
+                elif isinstance(v, list): # it's a list
+                    for item in v:
+                        if not isinstance(item, (str,int)): # if dict or list repeat
+                            json_search(key,item)
+        else: # Iterate a list because some APIs return JSON object in a list
+            for val in input_object:
+                if not isinstance(val, (str,int)):
+                    json_search(key,val)
+        return ret_val
+    print(json_search("issueSummary",data))
+    ```
+
+    Ik heb dit script uitgevoerd via vscode:
+    ![jsonsearch.py](/afbeeldingen/lab5_4.png)
+
+
+    Hierna werd er een unittest aangemaakt om na te gaan of de functie effectief werkt
+
+    Binnen deze test werden de volgende 3 methodes gebruikt
+     - Voor een gegeven sleutel in het JSON-object, kijk na of de testcode ook deze sleutel kan vinden.
+     - Voor een niet-bestaande sleutel in het JSON-object, kijk of de testcode ook bevestigt dat er geen sleutel is
+     - Controleer of de functie een lijst geeft, dit zou altijd het geval moeten zijn.
+
+     Na het uitvoeren van de unit test zien we dat deze faalt:
+     key should be found, return list should not be empty ... FAIL
+
+
+     Hierna wordt het script gecorrigeerd naar:
+
+         ```python
+    from test_data import *
+    ret_val=[]
+    def json_search(key,input_object):
+        if isinstance(input_object, dict): # Iterate dictionary
+            for k, v in input_object.items(): # searching key in the dict
+                if k == key:
+                    temp={k:v}
+                    ret_val.append(temp)
+                if isinstance(v, dict): # the value is another dict so repeat
+                    json_search(key,v)
+                elif isinstance(v, list): # it's a list
+                    for item in v:
+                        if not isinstance(item, (str,int)): # if dict or list repeat
+                            json_search(key,item)
+        else: # Iterate a list because some APIs return JSON object in a list
+            for val in input_object:
+                if not isinstance(val, (str,int)):
+                    json_search(key,val)
+        return ret_val
+    print(json_search("issueSummary",data))
+    ```
+
+    Er wordt een tweede error gevonden, de ret_val is nu een globale variable en de waarde wordt hierdoor behouden.
+    Om dit laatste op te lossen is er een outer function toegevoegd als volgt:
+
+    ```python
+    from test_data import *
+    def json_search(key,input_object):
+        ret_val=[]
+        def inner_function(key,input_object):
+            if isinstance(input_object, dict): # Iterate dictionary
+                for k, v in input_object.items(): # searching key in the dict
+                    if k == key:
+                        temp={k:v}
+                        ret_val.append(temp)
+                    if isinstance(v, dict): # the value is another dict so repeat
+                        json_search(key,v)
+                    elif isinstance(v, list): # it's a list
+                        for item in v:
+                            if not isinstance(item, (str,int)): # if dict or list repeat
+                                json_search(key,item)
+            else: # Iterate a list because some APIs return JSON object in a list
+                for val in input_object:
+                    if not isinstance(val, (str,int)):
+                        json_search(key,val)
+        inner_function(key,input_object)
+        return ret_val
+    print(json_search("issueSummary",data))
+    ```
+
+    Na deze twee aanpassingen slaagt de test, het print statement wordt nu normaal verwijderd.
 
 
 
