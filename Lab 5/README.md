@@ -34,13 +34,16 @@
     In dit lab werd er geleerd over Unit testing binnen Python.
 
     Q: What unittest class do you use to create an individual unit of testing?
-    A: TestCase, hiermee kunnen nieuwe testcases aangemaakt worden.
+    
+    : TestCase, hiermee kunnen nieuwe testcases aangemaakt worden.
 
     Q: How does the test runner know which methods are a test?
-    A: Methodes die starten met de prefix 'test_' duiden dit aan.
+
+    : Methodes die starten met de prefix 'test_' duiden dit aan.
 
     Q: What command will list all of the command line options for unittest shown in the following output?
-    A: `python3 -m unittest -h`
+    
+    : `python3 -m unittest -h`
 
     Hierna werd er met het  test_data.py bestand gewerkt.
     
