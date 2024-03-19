@@ -24,7 +24,7 @@
 
     Het toevoegen van een methode aan een klasse werd als volgt gedaan:
 
-    ```
+    ```python
     class Location:
         def __init__(self, name, country):
             self.name = name
@@ -49,7 +49,7 @@
 
     Als laatste onderdeel in dit lab werd er gewerkt met het script circleClass.py.
 
-    ```
+    ```python
 
     # Given a radius value, print the circumference of a circle.
     # Formula for a circumference is c = pi * 2 * radius
