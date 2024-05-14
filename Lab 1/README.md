@@ -110,6 +110,35 @@
 
 - Task preparation and implementation:
 
+    Indien Ubuntu nog niet geinstalleerd is kan dit gedownload worden via: https://ubuntu.com/download/desktop
+    Erna kan de installatie van een Ubuntu VM uitgevoerd worden in VirtualBox.
+
+        
+    - Python 3.8 and PIP, Python IDLE kan geinstalleerd worden in de CLI als volgt:
+
+		```bash
+        sudo apt install software-properties-common
+		sudo add-apt-repository ppa:deadsnakes/ppa
+		sudo apt update
+		sudo apt install python3.8
+        sudo apt install python3-pip
+        sudo pip install geopy
+        ```
+
+    
+    - Visual Studio Code kan geinstalleerd worden als volgt:
+
+    	```
+        sudo apt install software-properties-common apt-transport-https wget
+		wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
+		sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
+		sudo apt update
+		sudo apt install code
+        ```
+
+
+    - Jupyter:
+
 
 
 - Task troubleshooting:
