@@ -12,16 +12,20 @@
     LAB-RA01-C02-R01 – Gig 0/0/1 - LAB-BR-A-SW08 – Fa 0/2
     LAB-RA01-C02-R02 – Gig 0/0/1 - LAB-BR-A-SW13 – Fa 0/2
 
+    Oneven poort nummers zijn vanboven
+    Even poort nummers zijn vanonder
+
 
  
 
 Switch 1 Commando's:
 
+
 ```
 Enable
-configure terminal
+conf t
 hostname LAB-RA01-A02-SW01
-no ip domain-lookup
+no ip domain lookup
 enable secret cisco
 ip domain name data.labnet.local
 banner motd #
@@ -41,8 +45,8 @@ exit
 enable secret secret
 end
 
-ip shh version 2
-ip shh time-out 120
+ip ssh version 2
+ip ssh time-out 120
 ip ssh authentication-retries 3
 login block-for 180 attempts 3 within 50
 
@@ -112,7 +116,7 @@ Switch 2 commando's:
 ```
 Enable
 configure terminal
-no ip domain-lookup
+no ip domain lookup
 hostname LAB-RA01-A01-SW02
 enable secret cisco
 
@@ -135,8 +139,8 @@ exit
 enable secret secret
 end
 
-ip shh version 2
-ip shh time-out 120
+ip ssh version 2
+ip ssh time-out 120
 ip ssh authentication-retries 3
 login block-for 180 attempts 3 within 50
 
@@ -285,8 +289,8 @@ username cisco privilege 15 secret secret
 line vty 0 4
 transport input ssh
 
-ip shh version 2
-ip shh time-out 120
+ip ssh version 2
+ip ssh time-out 120
 ip ssh authentication-retries 3
 login block-for 180 attempts 3 within 50
 
@@ -341,6 +345,7 @@ ip route 172.17.1.112 255.255.255.240 10.199.65.200
 ```
 
 
+
 Router 2 commando's:
 ```
 enable
@@ -354,8 +359,8 @@ username cisco privilege 15 secret secret
 line vty 0 4
 transport input ssh
 
-ip shh version 2
-ip shh time-out 120
+ip ssh version 2
+ip ssh time-out 120
 ip ssh authentication-retries 3
 login block-for 180 attempts 3 within 50
 
