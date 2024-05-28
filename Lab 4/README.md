@@ -164,7 +164,7 @@ exit
 
 spanning-tree VLAN 15-18 priority 28672
 spanning-tree mode rapid-pvst
-
+```
 
 
 Switch 3 is een oudere switch, gebruikte commando's zijn als volgt
@@ -266,8 +266,6 @@ exit
 spanning-tree VLAN 15 priority 32768
 spanning-tree mode rapid-pvst
 ip default-gateway 172.17.1.65
-
-
 ```
 
 
@@ -340,9 +338,8 @@ ip route 172.17.1.80 255.255.255.240 10.199.65.200
 ip route 172.17.1.96 255.255.255.240 10.199.65.200
 ip route 172.17.1.112 255.255.255.240 10.199.65.200
 #test ip route 0.0.0.0 0.0.0.0 10.199.65.200
-
-
 ```
+
 
 Router 2 commando's:
 ```
