@@ -15,8 +15,8 @@
     Oneven poort nummers zijn vanboven
     Even poort nummers zijn vanonder
 
-
- 
+    Client steekt in op G1/0/1 van switch 2, switch 3 is de oudere switch en die geeft problemen met SSH. Switchport Access vlan 15 ingevoerd op deze poort.
+    
 
 Switch 1 Commando's:
 
@@ -129,6 +129,7 @@ crypto key generate rsa
 2048
 username cisco privilege 15 secret secret
 line vty 0 15
+password cisco
 transport input ssh
 login local
 exit
