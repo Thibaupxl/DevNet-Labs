@@ -11,7 +11,7 @@ from netmiko import ConnectHandler
 ip_addresses = ['172.17.1.65','172.17.1.66','172.17.1.67','172.17.1.68', '172.17.1.69''172.17.1.70']
 
 #gewenst commando
-command = ['show ip interfaces']
+command = ['show ip interface']
 
 def send_show_command_to_multiple_devices(ip_addresses, command):
     output = ""
